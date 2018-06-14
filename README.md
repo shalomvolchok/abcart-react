@@ -2,6 +2,8 @@
 
 This repository holds the `abcart-react` SDK. It is build to work with the abcart service as provided by [abcart.io](https://www.abcart.io). The library provides a set of Higher Order Components that provide a full-featured cart, payments, & subscriptions. The abcart service works with your Stripe account and eliminates the need for you to manage your own backend to interface with Stripe's apis.
 
+The library's design is based on a `redux` style state store and `actions` that get dispatched. All your components that are using `abcart-react` state providers will receive updated props whenever the state changes from any action dispatched across your application.
+
 Full documentation: [abcart.io/documentation](https://www.abcart.io/documentation/getting-your-api-key-and-shared-secret-key).
 
 Example application: [https://github.com/abcloudio/abcart-react-example](https://github.com/abcloudio/abcart-react-example)
@@ -50,6 +52,9 @@ const token = jwttoken.sign(
 *   Wrap your React application in the `AbcartProvider`, passing it your `apikey` and the signed `JWT` you created on your server.
 
 ```js
+import React from "react";
+import { AbcartProvider } from "abcart-react";
+
 const JWT = localStorage.get("ABCART_JWT");
 const App = () => (
     <AbcartProvider apikey="your-api-key" token={JWT}>

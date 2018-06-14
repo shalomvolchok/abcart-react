@@ -13,13 +13,6 @@ import connectSaveStripeCard from "./save-stripe-card";
 import connectCartItems from "./cart-items";
 import connectDeleteStripeCard from "./delete-stripe-card";
 import connectCreateSubscription from "./create-subscription";
-// presets
-const connectShoppingCartPreset = compose(
-    connectUpdateCartItem,
-    connectRemoveFromCart,
-    connectCartSummary,
-    connectCartItems
-);
 
 export {
     connectCreateSubscription,
@@ -36,6 +29,5 @@ export {
     connectSaveStripeCard,
     connectCartItems,
     connectOrders,
-    connectShoppingCartPreset,
     connectSaveForm
 };
