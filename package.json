@@ -1,0 +1,39 @@
+{
+    "name": "abcart-react",
+    "version": "1.0.0-alpha.1",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "TEST=true CART_API_URL=http://api.mock jest --watch --verbose"
+    },
+    "author": "Digital Optimization Group LLC",
+    "license": "MIT",
+    "dependencies": {
+        "abcart": "^1.0.0-alpha.1",
+        "abcloud-analytics-client-react": "1.0.0-alpha.1",
+        "uuid": "^3.2.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.0.0-beta.47",
+        "@babel/core": "^7.0.0-beta.46",
+        "@babel/plugin-proposal-class-properties": "7.0.0-beta.46",
+        "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.46",
+        "@babel/preset-env": "^7.0.0-beta.42",
+        "@babel/preset-react": "7.0.0-beta.46",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^22.4.3",
+        "dotenv-webpack": "^1.5.5",
+        "enzyme": "3.3.0",
+        "enzyme-adapter-react-16": "1.1.1",
+        "jest": "^22.4.3",
+        "mock-xmlhttprequest": "^1.2.0",
+        "react-test-renderer": "16.3.2",
+        "regenerator-runtime": "^0.11.1",
+        "xhr-mock": "^2.3.2"
+    },
+    "jest": {
+        "modulePathIgnorePatterns": [
+            "<rootDir>/dist/"
+        ]
+    }
+}
