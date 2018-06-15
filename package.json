@@ -1,6 +1,6 @@
 {
     "name": "abcart-react",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -8,9 +8,12 @@
     },
     "author": "Digital Optimization Group LLC",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abcloudio/abcart-react.git"
+    },
     "dependencies": {
-        "abcart": "^1.0.0-alpha.1",
-        "abcloud-analytics-client-react": "1.0.0-alpha.1",
+        "abcart": "^1.0.0-alpha.2",
         "uuid": "^3.2.1"
     },
     "devDependencies": {
@@ -32,8 +35,6 @@
         "xhr-mock": "^2.3.2"
     },
     "jest": {
-        "modulePathIgnorePatterns": [
-            "<rootDir>/dist/"
-        ]
+        "modulePathIgnorePatterns": ["<rootDir>/dist/"]
     }
 }
