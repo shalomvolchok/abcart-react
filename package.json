@@ -1,6 +1,6 @@
 {
     "name": "abcart-react",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.5",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -13,7 +13,7 @@
         "url": "https://github.com/abcloudio/abcart-react.git"
     },
     "dependencies": {
-        "abcart": "^1.0.0-alpha.3",
+        "abcart": "^1.0.0-alpha.5",
         "uuid": "^3.2.1",
         "prop-types": "15.6.1"
     },
